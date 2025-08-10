@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- SEO & Meta Information -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Enhanced HTML5 page demonstrating lists, tables, media, and a complete form with native HTML5 validation." />
+  <meta name="author" content="Regina Mutinda" />
+  <title>Week 2 Assignment – Enhanced Form</title>
+</head>
+
+<body>
+  <!-- Page Header -->
+  <header>
+    <h1>Week 2 Assignment: Enhanced HTML5 Content & Mastering Forms</h1>
+    <p>Demonstration of lists, tables, media, and advanced HTML5 form features.</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="#lists">Lists</a></li>
+      <li><a href="#tables">Tables</a></li>
+      <li><a href="#media">Media</a></li>
+      <li><a href="#form">Form</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Lists Section -->
+    <section id="lists" aria-labelledby="lists-heading">
+      <h2 id="lists-heading">Sample Lists</h2>
+
+      <h3>Ordered List – Steps to Submit Assignment</h3>
+      <ol>
+        <li>Complete your HTML file.</li>
+        <li>Check for semantic correctness and accessibility.</li>
+        <li>Save file as <code>enhanced-form.html</code>.</li>
+        <li>Upload to GitHub repository.</li>
+      </ol>
+
+      <h3>Unordered List – HTML5 Form Input Types</h3>
+      <ul>
+        <li>Text</li>
+        <li>Email</li>
+        <li>Number</li>
+        <li>Date</li>
+        <li>Password</li>
+        <li>Radio buttons</li>
+        <li>Checkboxes</li>
+      </ul>
+    </section>
+
+    <!-- Table Section -->
+    <section id="tables" aria-labelledby="tables-heading">
+      <h2 id="tables-heading">Sample Table – Student Scores</h2>
+      <table border="1">
+        <caption>Student HTML5 Assignment Scores</caption>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Assignment</th>
+            <th>Score (%)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Regina Mutinda</td>
+            <td>Week 1 Portfolio</td>
+            <td>95</td>
+          </tr>
+          <tr>
+            <td>John Doe</td>
+            <td>Week 2 Form</td>
+            <td>88</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Media Section -->
+    <section id="media" aria-labelledby="media-heading">
+      <h2 id="media-heading">Media Examples</h2>
+
+      <figure>
+        <img src="https://via.placeholder.com/400x200" alt="Placeholder portfolio screenshot" />
+        <figcaption>Example portfolio screenshot.</figcaption>
+      </figure>
+
+      <h3>Audio Example</h3>
+      <audio controls>
+        <source src="sample-audio.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+
+      <h3>Video Example</h3>
+      <video controls width="400">
+        <source src="sample-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Form Section -->
+    <section id="form" aria-labelledby="form-heading">
+      <h2 id="form-heading">HTML5 Registration Form</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="fullname">Full Name *</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required minlength="3" />
+
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email" />
+
+          <label for="dob">Date of Birth *</label>
+          <input type="date" id="dob" name="dob" required />
+
+          <label for="phone">Phone Number *</label>
+          <input type="tel" id="phone" name="phone" placeholder="07XXXXXXXX" pattern="[0-9]{10}" required />
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Details</legend>
+          <label for="username">Username *</label>
+          <input type="text" id="username" name="username" placeholder="Choose a username" required minlength="4" />
+
+          <label for="password">Password *</label>
+          <input type="password" id="password" name="password" placeholder="Create a password" required minlength="6" />
+
+          <label for="gender">Gender *</label>
+          <select id="gender" name="gender" required>
+            <option value="">Select...</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="other">Other</option>
+          </select>
+
+          <p>Subscribe to newsletter?</p>
+          <label>
+            <input type="radio" name="subscribe" value="yes" required /> Yes
+          </label>
+          <label>
+            <input type="radio" name="subscribe" value="no" /> No
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Terms & Submit</legend>
+          <label>
+            <input type="checkbox" name="terms" required /> I agree to the terms and conditions
+          </label>
+          <button type="submit">Register</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Regina Mutinda | HTML5 Week 2 Assignment</p>
+  </footer>
+</body>
+</html>                                                                                                                                                    
